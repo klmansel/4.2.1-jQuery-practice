@@ -1,0 +1,76 @@
+$red: #d00;
+$menugreen: #9fbb43;
+$darkgray: #5a5b60;
+$menugray: #e4e4e4;
+$black: #000;
+$lightgray: #a9b0be;
+
+
+// Bootstrap Variables
+$icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
+
+//Import Bootstrap
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.nav-list {
+  background-color: $menugray;
+  border: 2px solid $black;
+  color: $darkgray;
+  display: inline-block;
+  font-weight: bold;
+  list-style: none;
+  margin: auto;
+  padding: 25px;
+  text-decoration: none;
+
+  li {
+    border: 1px solid $darkgray;
+    padding: 10px;
+  }
+
+  .menu {
+    color: $lightgray;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 5px;
+  }
+
+  img {
+    height: 12px;
+    width: 12px;
+}
+
+  .my-files,
+  .cloud,
+  .mail,
+  .signout {
+    ul {
+      list-style: none;
+  }
+
+  }
+
+  h2 {
+    font-size: 24px;
+    height: 60px;
+    margin: auto;
+    text-align: left;
+
+    &:hover {
+      background-color: $menugreen;
+      content: '';
+}
+}
+
+  .number {
+    border: 1px solid $darkgray;
+    border-radius: 25%;
+    font-size: 12px;
+    margin: 50px;
+    padding: 5px;
+    position: relative;
+    right: 25px;
+    text-align: right;
+
+  }
+}
