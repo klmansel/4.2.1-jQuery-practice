@@ -5809,9 +5809,13 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.container {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 60px; }
+
 .nav-list {
   background-color: #e4e4e4;
-  border: 2px solid #000;
   color: #5a5b60;
   display: inline-block;
   font-weight: bold;
@@ -5836,21 +5840,35 @@ button.close {
   .nav-list .signout ul {
     list-style: none; }
   .nav-list h2 {
-    font-size: 24px;
+    background-color: #5a5b60;
+    border: 1px solid #5a5b60;
+    box-shadow: 2px 2px 2px #000;
+    color: #fff;
+    font-size: 14px;
     height: 60px;
-    margin: auto;
-    text-align: left; }
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    transition: .5s; }
     .nav-list h2:hover {
       background-color: #9fbb43;
       content: ''; }
   .nav-list .number {
+    background-color: #434449;
     border: 1px solid #5a5b60;
     border-radius: 25%;
+    color: #fff;
     font-size: 12px;
     margin: 50px;
-    padding: 5px;
+    padding: 3px;
     position: relative;
-    right: 25px;
+    right: 10px;
     text-align: right; }
+
+.my-files-menu,
+.cloud-menu {
+  box-shadow: 2px 2px 2px #000;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

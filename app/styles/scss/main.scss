@@ -4,6 +4,8 @@ $darkgray: #5a5b60;
 $menugray: #e4e4e4;
 $black: #000;
 $lightgray: #a9b0be;
+$white: #fff;
+$numbergray: #434449;
 
 
 // Bootstrap Variables
@@ -12,9 +14,14 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 //Import Bootstrap
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
+.container {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 60px;
+}
+
 .nav-list {
   background-color: $menugray;
-  border: 2px solid $black;
   color: $darkgray;
   display: inline-block;
   font-weight: bold;
@@ -46,15 +53,20 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
   .signout {
     ul {
       list-style: none;
-  }
-
-  }
+    }
+}
 
   h2 {
-    font-size: 24px;
+    background-color: $darkgray;
+    border: 1px solid $darkgray;
+    box-shadow: 2px 2px 2px $black; //box-shadow: inset  2px 2px 2px #000;
+    color: $white;
+    font-size: 14px;
     height: 60px;
-    margin: auto;
+    margin: 0;
+    padding: 20px;
     text-align: left;
+    transition: .5s;
 
     &:hover {
       background-color: $menugreen;
@@ -63,14 +75,22 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 }
 
   .number {
+    background-color: $numbergray;
     border: 1px solid $darkgray;
     border-radius: 25%;
+    color: $white;
     font-size: 12px;
     margin: 50px;
-    padding: 5px;
+    padding: 3px;
     position: relative;
-    right: 25px;
+    right: 10px;
     text-align: right;
-
   }
+}
+
+.my-files-menu,
+.cloud-menu {
+  box-shadow: 2px 2px 2px $black;
+  margin: 0;
+  padding: 0;
 }
